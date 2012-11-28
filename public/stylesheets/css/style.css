@@ -179,3 +179,10 @@ pre {
 body {
   background: white;
   color: black; }
+
+.logo {
+  text-indent: -9999px;
+  width: 204px;
+  height: 60px;
+  background-image: url(../../images/logo.svg);
+  background-size: 100% 100%; }
