@@ -196,6 +196,10 @@ body {
   margin-bottom: 20px;
   color: #2683ff; }
 
+.readingCopy p {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .logo {
   text-indent: -9999px;
   width: 204px;
