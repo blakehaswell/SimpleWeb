@@ -1,0 +1,10 @@
+body,
+button,
+input,
+select,
+textarea {
+    @include mq-tablet-and-up {
+        font-size: 18px;
+        line-height: 30px;
+    }
+}

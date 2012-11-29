@@ -1,7 +1,14 @@
 #header {
     @include gridColumn(12);
-    @include boxShadow(0 10px 10px -10px transparentize($black, 0.8));
+    @include boxShadow(0 5px 5px -5px transparentize($black, 0.9));
     
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    @include mq-tablet-and-up {
+        @include boxShadow(0 10px 10px -10px transparentize($black, 0.9));
+        
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }

@@ -38,10 +38,27 @@
     
     display: block;
     
+    -moz-transition-property: width, height, border-color, font-size, line-height, color, margin;
+    -moz-transition-duration: 0.4s;
+    -webkit-transition-property: width, height, border-color, font-size, line-height, color, margin;
+    -webkit-transition-duration: 0.4s;
+    transition-property: width, height, border-color, font-size, line-height, color, margin;
+    transition-duration: 0.4s;
+    
     &:hover,
+    &:focus,
     &.is-selected {
         border-color: $newLife;
         color: $textColour;
+    }
+    
+    &:active {
+        @include square(130px);
+
+        line-height: 122px;
+
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
     
     &.is-selected {
