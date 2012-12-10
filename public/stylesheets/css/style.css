@@ -180,6 +180,24 @@ body {
   background: #fcfcfc;
   color: #666666; }
 
+.h1 {
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #1358cd; }
+
+.h1-withSpacing {
+  margin: 40px 0 20px; }
+
+.h2, .benefits-heading {
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2683ff; }
+
+.h2-withSpacing {
+  margin: 20px 0 10px; }
+
 .inlineContactInfo {
   float: right;
   margin: 4px 0;
@@ -280,6 +298,25 @@ body {
     .featureModule-copy p {
       margin: 20px 0; } }
 
+.benefits {
+  zoom: 1;
+  margin-left: -10px;
+  margin-right: -10px; }
+  .benefits:before, .benefits:after {
+    content: "";
+    display: table; }
+  .benefits:after {
+    clear: both; }
+
+.benefits-item {
+  float: left;
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.benefits-heading {
+  margin-bottom: 10px; }
+
 #container {
   background-color: #fcfcfc; }
 
@@ -328,7 +365,11 @@ body {
       padding-bottom: 40px; } }
 
 #primaryContent {
-  background-color: white; }
+  background-color: white;
+  border-bottom: 1px solid #eeeeee; }
 
 #secondaryContent {
-  border-top: 1px solid #eeeeee; }
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }

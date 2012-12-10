@@ -1,0 +1,17 @@
+.benefits {
+    @include clearfix;
+    
+    // TODO Genericise this.
+    margin-left: 0 - ($gridGutter / 2);
+    margin-right: 0 - ($gridGutter / 2);
+}
+
+.benefits-item {
+    @include gridColumn(3);
+}
+
+.benefits-heading {
+    @extend .h2;
+    
+    margin-bottom: 10px;
+}
