@@ -1,3 +1,5 @@
 #secondaryContent {
     @include gridColumn(12);
+    
+    padding-bottom: 40px;
 }

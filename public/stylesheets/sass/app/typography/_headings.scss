@@ -1,9 +1,14 @@
 .h1 {
     font-family: $altFontFamily;
-    font-size: 36px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
     
     color: $highInTheSky;
+    
+    @include mq-small-tablet-and-up {
+        font-size: 36px;
+        line-height: 40px;
+    }
 }
 
 .h1-withSpacing {
@@ -12,12 +17,30 @@
 
 .h2 {
     font-family: $altFontFamily;
-    font-size: 24px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 20px;
     
     color: $brightBlueHeavens;
+    
+    @include mq-small-tablet-and-up {
+        font-size: 24px;
+        line-height: 30px;
+    }
 }
 
 .h2-withSpacing {
     margin: 20px 0 10px;
+}
+
+.h3 {
+    font-family: $altFontFamily;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: $skyMeetsClouds;
+    
+    @include mq-small-tablet-and-up {
+        font-size: 18px;
+        line-height: 20px;
+    }
 }

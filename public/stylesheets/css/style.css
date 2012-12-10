@@ -182,21 +182,39 @@ body {
 
 .h1 {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 24px;
+  line-height: 30px;
   color: #1358cd; }
+  @media (min-width: 481px) {
+    .h1 {
+      font-size: 36px;
+      line-height: 40px; } }
 
 .h1-withSpacing {
   margin: 40px 0 20px; }
 
-.h2, .benefits-heading {
+.h2, .benefits-heading, .contactMethod {
   font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 18px;
+  line-height: 20px;
   color: #2683ff; }
+  @media (min-width: 481px) {
+    .h2, .benefits-heading, .contactMethod {
+      font-size: 24px;
+      line-height: 30px; } }
 
-.h2-withSpacing {
+.h2-withSpacing, .benefits-heading {
   margin: 20px 0 10px; }
+
+.h3, .contactMethod-type {
+  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #66b7ec; }
+  @media (min-width: 481px) {
+    .h3, .contactMethod-type {
+      font-size: 18px;
+      line-height: 20px; } }
 
 .inlineContactInfo {
   float: right;
@@ -210,13 +228,14 @@ body {
   .inlineContactInfo dt {
     font-size: 10px;
     line-height: 0;
-    margin-left: 40px; }
+    margin-left: 20px; }
   @media (min-width: 481px) {
     .inlineContactInfo {
       font-size: 14px;
       margin: 9px 0; }
       .inlineContactInfo dt {
-        font-size: 12px; } }
+        font-size: 12px;
+        margin-left: 40px; } }
 
 .logo {
   text-indent: -9999px;
@@ -298,24 +317,30 @@ body {
     .featureModule-copy p {
       margin: 20px 0; } }
 
-.benefits {
-  zoom: 1;
-  margin-left: -10px;
-  margin-right: -10px; }
-  .benefits:before, .benefits:after {
-    content: "";
-    display: table; }
-  .benefits:after {
-    clear: both; }
+@media (min-width: 641px) {
+  .benefits {
+    zoom: 1;
+    margin-left: -10px;
+    margin-right: -10px; }
+    .benefits:before, .benefits:after {
+      content: "";
+      display: table; }
+    .benefits:after {
+      clear: both; } }
 
-.benefits-item {
-  float: left;
-  width: 25%;
-  padding-left: 10px;
-  padding-right: 10px; }
+@media (min-width: 641px) {
+  .benefits-item {
+    float: left;
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px; } }
 
-.benefits-heading {
-  margin-bottom: 10px; }
+@media (min-width: 641px) {
+  .benefits-heading {
+    margin-top: 0; } }
+
+.contactMethod {
+  margin: 10px 0; }
 
 #container {
   background-color: #fcfcfc; }
@@ -372,4 +397,5 @@ body {
   float: left;
   width: 100%;
   padding-left: 10px;
-  padding-right: 10px; }
+  padding-right: 10px;
+  padding-bottom: 40px; }

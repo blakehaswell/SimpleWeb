@@ -1,0 +1,9 @@
+.contactMethod {
+    @extend .h2;
+    
+    margin: 10px 0;
+}
+
+.contactMethod-type {
+    @extend .h3;
+}
