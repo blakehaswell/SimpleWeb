@@ -1,0 +1,9 @@
+$topBarColour: $skyMeetsClouds;
+
+#topBar {
+    @include linearGradient(lighten($topBarColour, 5%), $topBarColour);
+    
+    border-top: 1px solid lighten($topBarColour, 15%);
+    border-bottom: 1px solid darken($topBarColour, 10%);
+    overflow: hidden;
+}

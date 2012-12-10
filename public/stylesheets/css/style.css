@@ -96,7 +96,7 @@ input[type="submit"] {
   border: 0;
   margin: 0;
   background: transparent;
-  color: #333333; }
+  color: #666666; }
 
 button,
 input[type="button"],
@@ -177,53 +177,28 @@ pre {
   word-wrap: break-word; }
 
 body {
-  background: white;
-  color: #333333; }
+  background: #fcfcfc;
+  color: #666666; }
 
-@media (min-width: 641px) {
-  body,
-  button,
-  input,
-  select,
-  textarea {
-    font-size: 18px;
-    line-height: 30px; } }
-
-.h1 {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 36px;
-  line-height: 40px;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  color: #1358cd; }
-  @media (min-width: 641px) {
-    .h1 {
-      font-size: 48px;
-      line-height: 60px;
-      margin-top: 60px;
-      margin-bottom: 20px; } }
-
-.h2 {
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-size: 24px;
-  line-height: 30px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  color: #2683ff; }
-  @media (min-width: 641px) {
-    .h2 {
-      font-size: 36px;
-      line-height: 40px;
-      margin-top: 40px;
-      margin-bottom: 20px; } }
-
-.readingCopy p {
-  margin-top: 10px;
-  margin-bottom: 10px; }
-  @media (min-width: 641px) {
-    .readingCopy p {
-      margin-top: 20px;
-      margin-bottom: 20px; } }
+.inlineContactInfo {
+  float: right;
+  margin: 4px 0;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); }
+  .inlineContactInfo dt,
+  .inlineContactInfo dd {
+    display: inline; }
+  .inlineContactInfo dt {
+    font-size: 10px;
+    line-height: 0;
+    margin-left: 40px; }
+  @media (min-width: 481px) {
+    .inlineContactInfo {
+      font-size: 14px;
+      margin: 9px 0; }
+      .inlineContactInfo dt {
+        font-size: 12px; } }
 
 .logo {
   text-indent: -9999px;
@@ -231,113 +206,65 @@ body {
   height: 40px;
   background-image: url(../../images/logo.svg);
   background-size: 100% 100%; }
-  @media (min-width: 641px) {
+  @media (min-width: 481px) {
     .logo {
       width: 204px;
       height: 60px; } }
-
-.processNav {
-  zoom: 1;
-  margin-left: -10px;
-  margin-right: -10px;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-  .processNav:before, .processNav:after {
-    content: "";
-    display: table; }
-  .processNav:after {
-    clear: both; }
-
-.processNav-stepContainer {
-  float: left;
-  width: 25%;
-  padding-left: 10px;
-  padding-right: 10px;
-  position: relative; }
-
-.processNav-step {
-  width: 140px;
-  height: 140px;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
-  border-radius: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 4px solid #a0c55f;
-  color: #666666;
-  background-color: white;
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  font-family: "Myriad Pro", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 132px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: block;
-  -moz-transition-property: width, height, border-color, font-size, line-height, color, margin;
-  -moz-transition-duration: 0.4s;
-  -webkit-transition-property: width, height, border-color, font-size, line-height, color, margin;
-  -webkit-transition-duration: 0.4s;
-  transition-property: width, height, border-color, font-size, line-height, color, margin;
-  transition-duration: 0.4s; }
-  .processNav-step:hover, .processNav-step:focus, .processNav-step.is-selected {
-    border-color: #7ab317;
-    color: #333333; }
-  .processNav-step:active {
-    width: 130px;
-    height: 130px;
-    line-height: 122px;
-    margin-top: 25px;
-    margin-bottom: 25px; }
-  .processNav-step.is-selected {
-    width: 180px;
-    height: 180px;
-    font-size: 30px;
-    line-height: 172px;
-    margin-top: 0;
-    margin-bottom: 0; }
-
-.processNav-connector {
-  width: 100%;
-  height: 4px;
-  text-indent: -9999px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  margin-top: -2px;
-  display: block;
-  background-color: #a0c55f; }
+  @media (min-width: 641px) {
+    .logo {
+      width: 272px;
+      height: 80px; } }
 
 #container {
+  background-color: #fcfcfc; }
+
+.l-gridContainer {
   zoom: 1;
   margin-left: auto;
   margin-right: auto;
   max-width: 960px; }
-  #container:before, #container:after {
+  .l-gridContainer:before, .l-gridContainer:after {
     content: "";
     display: table; }
-  #container:after {
+  .l-gridContainer:after {
     clear: both; }
+
+.l-gridContainer-inner {
+  float: left;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+#topBar {
+  background: #66b7ec;
+  background: -moz-linear-gradient(top, #7dc2ef, #66b7ec);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7dc2ef), color-stop(100%, #66b7ec));
+  background: -webkit-linear-gradient(top, #7dc2ef, #66b7ec);
+  background: -o-linear-gradient(top, #7dc2ef, #66b7ec);
+  background: -ms-linear-gradient(top, #7dc2ef, #66b7ec);
+  background: linear-gradient(top, #7dc2ef, #66b7ec);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7dc2ef', endColorstr='#66b7ec',GradientType=0 );
+  /* IE6-9 */
+  border-top: 1px solid #aad7f4;
+  border-bottom: 1px solid #39a2e6;
+  overflow: hidden; }
 
 #header {
   float: left;
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  -moz-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  @media (min-width: 641px) {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eeeeee; }
+  @media (min-width: 481px) {
     #header {
-      -moz-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
-      -webkit-box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
-      box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.1);
       padding-top: 30px;
       padding-bottom: 30px; } }
+  @media (min-width: 641px) {
+    #header {
+      padding-top: 40px;
+      padding-bottom: 40px; } }
 
 #body {
   float: left;

@@ -1,9 +1,7 @@
 $white: #fff;
-$lighterGrey: darken($white, 5%);
-$lightGrey: darken($white, 15%);
-$grey: darken($white, 40%);
-$darkGrey: darken($white, 60%);
-$darkerGrey: darken($white, 80%);
+$lightGrey: #fcfcfc;
+$grey: #eee;
+$darkGrey: #666;
 $black: #000;
 
 // Blues
@@ -17,6 +15,5 @@ $eden: #a0c55f;
 $newLife: #7ab317;
 
 // Semantically named colours
-$bodyBackground: $white;
-$textColour: #333;
-$textColourLight: #666;
+$bodyBackground: $lightGrey;
+$textColour: $darkGrey;

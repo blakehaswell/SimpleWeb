@@ -1,0 +1,7 @@
+.l-gridContainer {
+    @include gridContainer;
+}
+
+.l-gridContainer-inner {
+    @include gridColumn(12);
+}

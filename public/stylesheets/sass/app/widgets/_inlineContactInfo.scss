@@ -1,0 +1,28 @@
+.inlineContactInfo {
+    float: right;
+    margin: 4px 0;
+    
+    color: $white;
+    font-size: 12px;
+    text-shadow: 0 -1px 0 transparentize($black, 0.8);
+    
+    dt,
+    dd {
+        display: inline;
+    }
+    
+    dt {
+        font-size: 10px;
+        line-height: 0;
+        margin-left: 40px;
+    }
+
+    @include mq-small-tablet-and-up {
+        font-size: 14px;
+        margin: 9px 0;
+
+        dt {
+            font-size: 12px;
+        }
+    }
+}
