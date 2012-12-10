@@ -6,9 +6,11 @@
 
 @import "app/widgets/inlineContactInfo";
 @import "app/widgets/logo";
+@import "app/widgets/featureModule";
 
 @import "app/layout/container";
 @import "app/layout/gridContainer";
 @import "app/layout/topBar";
 @import "app/layout/header";
-@import "app/layout/body";
+@import "app/layout/primaryContent";
+@import "app/layout/secondaryContent";
