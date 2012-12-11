@@ -12,7 +12,7 @@
     //@include gridColumn(12);
     display: none;
     
-    @include mq-small-tablet-and-up {
+    @include mq-tablet-and-up {
         @include gridColumn(4);
         @include gridPush(8);
         
@@ -23,7 +23,7 @@
 .featureModule-bd {
     @include gridColumn(12);
     
-    @include mq-small-tablet-and-up {
+    @include mq-tablet-and-up {
         @include gridColumn(8);
         @include gridPull(4);
     }
@@ -43,15 +43,17 @@
     }
     
     @include mq-small-tablet-and-up {
-        font-size: 36px;
-        line-height: 40px;
-        
-        margin: 20px 0;
+        //font-size: 36px;
+        //line-height: 40px;
+        //
+        //margin: 20px 0;
     }
     
-    @include mq-tablet-and-up {
+    @include mq-small-tablet-and-up {
         font-size: 60px;
         line-height: 70px;
+        
+        margin: 20px 0;
     }
 }
 

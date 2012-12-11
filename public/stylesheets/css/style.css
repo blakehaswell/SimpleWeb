@@ -247,10 +247,6 @@ body {
     .logo {
       width: 204px;
       height: 60px; } }
-  @media (min-width: 641px) {
-    .logo {
-      width: 272px;
-      height: 80px; } }
 
 .featureModule {
   zoom: 1;
@@ -266,7 +262,7 @@ body {
 
 .featureModule-img {
   display: none; }
-  @media (min-width: 481px) {
+  @media (min-width: 641px) {
     .featureModule-img {
       float: left;
       width: 33.33333%;
@@ -281,7 +277,7 @@ body {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px; }
-  @media (min-width: 481px) {
+  @media (min-width: 641px) {
     .featureModule-bd {
       float: left;
       width: 66.66667%;
@@ -300,13 +296,9 @@ body {
     color: #1358cd; }
   @media (min-width: 481px) {
     .featureModule-heading {
-      font-size: 36px;
-      line-height: 40px;
-      margin: 20px 0; } }
-  @media (min-width: 641px) {
-    .featureModule-heading {
       font-size: 60px;
-      line-height: 70px; } }
+      line-height: 70px;
+      margin: 20px 0; } }
 
 .featureModule-copy p {
   margin: 10px 0; }
@@ -384,10 +376,6 @@ body {
     #header {
       padding-top: 30px;
       padding-bottom: 30px; } }
-  @media (min-width: 641px) {
-    #header {
-      padding-top: 40px;
-      padding-bottom: 40px; } }
 
 #primaryContent {
   background-color: white;
