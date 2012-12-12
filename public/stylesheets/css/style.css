@@ -270,7 +270,9 @@ body {
       padding-right: 10px;
       position: relative;
       left: 66.66667%;
-      display: block; } }
+      display: block; }
+      .featureModule-img > img {
+        margin-top: 40px; } }
 
 .featureModule-bd {
   float: left;

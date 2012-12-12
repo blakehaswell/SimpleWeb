@@ -17,6 +17,10 @@
         @include gridPush(8);
         
         display: block;
+        
+        > img {
+            margin-top: 40px;
+        }
     }
 }
 
