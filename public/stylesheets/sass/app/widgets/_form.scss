@@ -1,0 +1,39 @@
+.formField {
+    
+}
+
+.formField-label {
+    @include positionAbs($left: -9999px);
+}
+
+.formField-textInput {
+    @include borderRadius(5px);
+    
+    border: 1px solid $grey;
+    background-color: $white;
+    padding: 10px;
+    
+    margin: 20px 0;
+    
+    @include placeholderStyles {
+        color: lighten($textColour, 30%);
+    }
+}
+
+.formButtons {
+    
+}
+
+.formButtons-subscribeButton {
+    @include borderRadius(5px);
+    @include linearGradient(lighten($newLife, 10%), $newLife);
+    @include boxShadow(inset 0 1px 0 lighten($newLife, 30%));
+    
+    padding: 10px 20px;
+    
+    color: $white;
+    text-shadow: 0 -1px 0 $newLife;
+    font-weight: bold;
+    
+    border: 1px solid $newLife;
+}
