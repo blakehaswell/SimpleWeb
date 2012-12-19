@@ -36,4 +36,11 @@
     font-weight: bold;
     
     border: 1px solid $newLife;
+    
+    &:active {
+        @include linearGradient($newLife, lighten($newLife, 10%));
+        @include boxShadow(inset 0 -1px 0 lighten($newLife, 30%));
+        
+        border: 1px solid $newLife;
+    }
 }
