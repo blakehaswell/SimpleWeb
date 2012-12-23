@@ -18,6 +18,10 @@
     @include placeholderStyles {
         color: lighten($textColour, 30%);
     }
+    
+    &:focus {
+        border-color: darken($grey, 10%);
+    }
 }
 
 .formButtons {
