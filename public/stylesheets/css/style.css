@@ -390,23 +390,16 @@ body {
   box-shadow: inset 0 1px 0 #c2ed76;
   padding: 10px 20px;
   color: white;
-  text-shadow: 0 -1px 0 #7ab317;
+  text-shadow: 0 -1px 0 #5b8611;
   font-weight: bold;
   border: 1px solid #7ab317; }
+  .formButtons-subscribeButton:hover, .formButtons-subscribeButton:focus {
+    border-color: #5b8611; }
   .formButtons-subscribeButton:active {
-    background: #99e01d;
-    background: -moz-linear-gradient(top, #7ab317, #99e01d);
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7ab317), color-stop(100%, #99e01d));
-    background: -webkit-linear-gradient(top, #7ab317, #99e01d);
-    background: -o-linear-gradient(top, #7ab317, #99e01d);
-    background: -ms-linear-gradient(top, #7ab317, #99e01d);
-    background: linear-gradient(top, #7ab317, #99e01d);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7ab317', endColorstr='#99e01d',GradientType=0 );
-    /* IE6-9 */
-    -moz-box-shadow: inset 0 -1px 0 #c2ed76;
-    -webkit-box-shadow: inset 0 -1px 0 #c2ed76;
-    box-shadow: inset 0 -1px 0 #c2ed76;
-    border: 1px solid #7ab317; }
+    -moz-box-shadow: inset 0 1px 2px #5b8611;
+    -webkit-box-shadow: inset 0 1px 2px #5b8611;
+    box-shadow: inset 0 1px 2px #5b8611;
+    border-color: #5b8611; }
 
 #container {
   background-color: #f7f7f7; }

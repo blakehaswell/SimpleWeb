@@ -32,15 +32,19 @@
     padding: 10px 20px;
     
     color: $white;
-    text-shadow: 0 -1px 0 $newLife;
+    text-shadow: 0 -1px 0 darken($newLife, 10%);
     font-weight: bold;
     
     border: 1px solid $newLife;
     
+    &:hover,
+    &:focus {
+        border-color: darken($newLife, 10%);
+    }
+    
     &:active {
-        @include linearGradient($newLife, lighten($newLife, 10%));
-        @include boxShadow(inset 0 -1px 0 lighten($newLife, 30%));
+        @include boxShadow(inset 0 1px 2px darken($newLife, 10%));
         
-        border: 1px solid $newLife;
+        border-color: darken($newLife, 10%);
     }
 }
