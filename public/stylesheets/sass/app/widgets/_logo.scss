@@ -2,10 +2,31 @@
     @include imageReplacement;
     @include size(136px, 40px);
     
-    background-image: url(../../images/logo.svg);
-    background-size: 100% 100%;
+    
+    
+    position: relative;
     
     @include mq-small-tablet-and-up {
         @include size(204px, 60px);
+    }
+    
+    &:before {
+        @include generatedContent;
+        @include square(408px);
+        @include positionAbs(50%, 50%);
+        
+        margin-top: -204px;
+        margin-left: -204px;
+        
+        background-image: url(../../images/logo-highlight.png);
+    }
+    
+    &:after {
+        @include generatedContent;
+        @include size(100%, 100%);
+        @include positionAbs(0, 0);
+        
+        background-image: url(../../images/logo.svg);
+        background-size: 100% 100%;
     }
 }

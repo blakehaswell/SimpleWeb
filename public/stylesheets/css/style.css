@@ -242,12 +242,32 @@ body {
   text-indent: -9999px;
   width: 136px;
   height: 40px;
-  background-image: url(../../images/logo.svg);
-  background-size: 100% 100%; }
+  position: relative; }
   @media (min-width: 481px) {
     .logo {
       width: 204px;
       height: 60px; } }
+  .logo:before {
+    content: '';
+    display: block;
+    width: 408px;
+    height: 408px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -204px;
+    margin-left: -204px;
+    background-image: url(../../images/logo-highlight.png); }
+  .logo:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../../images/logo.svg);
+    background-size: 100% 100%; }
 
 .featureModule {
   zoom: 1;
@@ -440,7 +460,8 @@ body {
 #header {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #dddddd; }
+  border-bottom: 1px solid #dddddd;
+  overflow: hidden; }
   @media (min-width: 481px) {
     #header {
       padding-top: 30px;
