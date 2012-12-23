@@ -8,8 +8,4 @@
     @include mq-small-tablet-and-up {
         @include size(204px, 60px);
     }
-    
-    @include mq-tablet-and-up {
-        //@include size(272px, 80px);
-    }
 }
