@@ -1,9 +1,10 @@
 var express = require("express");
+var engines = require('consolidate');
 var app = express();
 
-// I like EJS. :-)
-// TODO Switch to QEJS: https://github.com/jepso/QEJS
-app.set("view engine", "ejs");
+app.engine('html', engines.qejs);
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
 
 // Serve static assets.
 app.use(express.static(__dirname + "/public"));
